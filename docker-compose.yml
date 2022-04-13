@@ -109,7 +109,7 @@ services:
             traefik.http.routers.app.entrypoints: websecure
             traefik.http.routers.app.rule: 'Host(`your.host.name`)'
             traefik.http.routers.app.tls: 'true'
-            traefik.http.routers.app.tls.certresolver: le
+            traefik.http.routers.app.tls.certresolver: lets-encr
             traefik.http.services.app.loadbalancer.server.port: 80
             # traefik: change the following line to your external docker network
             traefik.docker.network: web
